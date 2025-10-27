@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="2" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-10-27T14:08:07 WAT" name="Surefire suite" finished-at="2025-10-27T14:14:42 WAT" duration-ms="395088">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.RunnerTest@221a3fa4]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-10-27T14:08:07 WAT" name="Surefire test" finished-at="2025-10-27T14:14:42 WAT" duration-ms="395088">
+      <class name="Runners.RunnerTest">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runners.RunnerTest@221a3fa4]" started-at="2025-10-27T14:08:07 WAT" name="setUpClass" finished-at="2025-10-27T14:08:08 WAT" duration-ms="1397" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4c4748bf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.RunnerTest@221a3fa4]" started-at="2025-10-27T14:08:08 WAT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-27T14:11:11 WAT" duration-ms="183018" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["login with different combinations of credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.RunnerTest@221a3fa4]" started-at="2025-10-27T14:08:08 WAT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-27T14:10:21 WAT" duration-ms="132871" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["login with different combinations of credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login functionality"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn't exist 
+Host info: host: 'ITMTNP27DEAG', ip: '10.1.15.163'
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files\Google\Chr..., extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn't exist 
+Host info: host: 'ITMTNP27DEAG', ip: '10.1.15.163'
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files\Google\Chr..., extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+at Factory.DriverFactory.initDriver(DriverFactory.java:17)
+at Hooks.Hooks.setup(Hooks.java:16)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.RunnerTest@221a3fa4]" started-at="2025-10-27T14:08:08 WAT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-27T14:11:14 WAT" duration-ms="185256" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Adding a product to the cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Adding products to the cart"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Le bouton n'a pas changé en 'Remove' expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Le bouton n'a pas changé en 'Remove' expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at Steps.AddProductCart.the_button_changes_to_for_that_product(AddProductCart.java:34)
+at ✽.the button changes to "Remove" for that product(file:///C:/Users/marwa.antoul/IdeaProjects/saucedemo/src/test/resources/Features/AddProductInCart.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.RunnerTest@221a3fa4]" started-at="2025-10-27T14:08:08 WAT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-27T14:11:35 WAT" duration-ms="206193" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["login with different combinations of credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login functionality"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runners.RunnerTest@221a3fa4]" started-at="2025-10-27T14:08:08 WAT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-27T14:14:42 WAT" duration-ms="393177" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Complete checkout process"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Checkout process for products in the cart"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[java.util.concurrent.TimeoutException
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [55d0d84c36faf4b1112a7fbe2671da2b, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\MARWA~1.ANT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65250}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65250/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 55d0d84c36faf4b1112a7fbe2671da2b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [55d0d84c36faf4b1112a7fbe2671da2b, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\MARWA~1.ANT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65250}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65250/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 55d0d84c36faf4b1112a7fbe2671da2b
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:422)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1061)
+at Factory.DriverFactory.initDriver(DriverFactory.java:23)
+at Hooks.Hooks.setup(Hooks.java:16)
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2964)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runners.RunnerTest@221a3fa4]" started-at="2025-10-27T14:14:42 WAT" name="tearDownClass" finished-at="2025-10-27T14:14:42 WAT" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runners.RunnerTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

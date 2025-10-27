@@ -1,0 +1,64 @@
+-------------------------------------------------------------------------------
+Test set: Runners.RunnerTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 402.4 s <<< FAILURE! -- in Runners.RunnerTest
+Runners.RunnerTest.runScenario["login with different combinations of credentials", "Login functionality"](1) -- Time elapsed: 134.3 s <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn't exist 
+Host info: host: 'ITMTNP27DEAG', ip: '10.1.15.163'
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], binary: C:\Program Files\Google\Chr..., extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:162)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:245)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:174)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:51)
+	at Factory.DriverFactory.initDriver(DriverFactory.java:17)
+	at Hooks.Hooks.setup(Hooks.java:16)
+
+Runners.RunnerTest.runScenario["Adding a product to the cart", "Adding products to the cart"](3) -- Time elapsed: 185.3 s <<< FAILURE!
+java.lang.AssertionError: Le bouton n'a pas changé en 'Remove' expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at Steps.AddProductCart.the_button_changes_to_for_that_product(AddProductCart.java:34)
+	at ✽.the button changes to "Remove" for that product(file:///C:/Users/marwa.antoul/IdeaProjects/saucedemo/src/test/resources/Features/AddProductInCart.feature:10)
+
+Runners.RunnerTest.runScenario["Complete checkout process", "Checkout process for products in the cart"](5) -- Time elapsed: 393.2 s <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+java.util.concurrent.TimeoutException
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [55d0d84c36faf4b1112a7fbe2671da2b, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: C:\Users\MARWA~1.ANT\AppDat...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65250}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65250/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 55d0d84c36faf4b1112a7fbe2671da2b
+	at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:422)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1061)
+	at Factory.DriverFactory.initDriver(DriverFactory.java:23)
+	at Hooks.Hooks.setup(Hooks.java:16)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2964)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+
