@@ -7,9 +7,13 @@ The goal is to automate functional test scenarios to validate the behavior of th
 🛠️ Technologies Used
 
 •	Java
+
 •	Selenium WebDriver
+
 •	Cucumber (BDD)
+
 •	TestNG
+
 •	Maven
 
 📦 Installation
